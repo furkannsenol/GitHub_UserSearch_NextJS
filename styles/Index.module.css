@@ -1,0 +1,10 @@
+.pagination2{
+    background-color: green;
+}
+.pagination> li >.page-item{
+    background-color: green;
+}
+
+.active>.page-link, .page-link.active{
+background-color: white;
+}
