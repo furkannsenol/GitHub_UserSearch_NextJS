@@ -7,16 +7,17 @@ import Card from 'react-bootstrap/Card';
 import Pagination from 'react-bootstrap/Pagination';
 import styles from '../styles/Index.module.css'
 
+
 const index = ({ data, messageFound }) => {
   const router = useRouter()
 
   const [currentPage, setCurrentPage] = React.useState(1)
-  const [postPerPage, setPostPerPage] = React.useState(10)
+  const [postPerPage, setPostPerPage] = React.useState(8)
 
   const lastPostIndex = currentPage * postPerPage //1*10
   const firstPostIndex = lastPostIndex - postPerPage //20-10
-  const currentPost = data.slice(firstPostIndex, lastPostIndex)
-  const totalPosts = data.length
+  const currentPost = data?.slice(firstPostIndex, lastPostIndex)
+  const totalPosts = data?.length
 
   let pageNumbers = []
   for (let i = 1; i <= Math.ceil(totalPosts / postPerPage); i++) {
@@ -26,12 +27,12 @@ const index = ({ data, messageFound }) => {
   const topOfPage = () => {
     window.scrollTo(0, 0)
   }
-
   return (
 
     <div>
 
-      <style jsx>{`
+    
+<style jsx>{`
     .active>.page-link, .page-link.active {
       background-color: #198754;
       color:white;
@@ -41,7 +42,6 @@ const index = ({ data, messageFound }) => {
       color:#198754;
     }
   `}</style>
-
       <Container>
         <h4>{messageFound}</h4>
         <h4>{firstPostIndex + 1} - {lastPostIndex} User List</h4><br />
@@ -50,16 +50,16 @@ const index = ({ data, messageFound }) => {
         <Row>
 
           {currentPost?.map((user) => (
-            <Col xs={3} key={user.id}>
-              <Card style={{ width: '15rem', marginBottom: 30 }} >
-                <Image alt='user image'  width={238} height={238}  src={user?.avatar_url} onClick={e => router.push(`user/${user.login}`)} style={{ cursor: 'pointer' }} />
+            <Col xs={3} key={user?.id}>
+              <Card style={{ width: '15rem', marginBottom: 30}} >
+                <Image alt='user image'  width={238} height={238}  src={user?.avatar_url} onClick={e => router.push(`user/${user?.login}`)} style={{ cursor: 'pointer' }} />
                 <Card.Body className='text-center'>
-                  <Card.Title onClick={e => router.push(`user/${user.login}`)} style={{ cursor: 'pointer' }}>{user.login}</Card.Title>
+                  <Card.Title  onClick={e => router.push(`user/${user?.login}`)} style={{ cursor: 'pointer' }}>{user?.login}</Card.Title>
                   <Card.Text>
 
                   </Card.Text>
                   <div className="d-grid">
-                  <Button variant="success">GitHub Profile</Button></div>
+                  <Button variant="success" target='_blank' href={user?.html_url} >GitHub Profile</Button></div>
                 </Card.Body>
               </Card>
             </Col>
@@ -102,8 +102,8 @@ export const getServerSideProps = async () => {
     return { props: { data } }
 
   } catch (e) {
-    console.log(e)
-    return { props: {} }
+    //console.log(e)
+    return { props: { messageFound : 'API DOWN' } }
   }
 
 }

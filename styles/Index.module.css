@@ -1,10 +1,8 @@
-.pagination2{
-    background-color: green;
-}
-.pagination> li >.page-item{
-    background-color: green;
-}
-
-.active>.page-link, .page-link.active{
-background-color: white;
-}
+.active>.page-link, .page-link.active {
+    background-color: #198754;
+    color:white;
+    border-color:#198754;
+  }
+  .page-link{
+    color:#198754;
+  }
