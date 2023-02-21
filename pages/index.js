@@ -8,8 +8,8 @@ import Pagination from 'react-bootstrap/Pagination';
 import styles from '../styles/Index.module.css'
 
 
-const index = ({ data, messageFound }) => {
-  const router = useRouter()
+const  index =  ({ data, messageFound })  => {
+  const  router = useRouter()
 
   const [currentPage, setCurrentPage] = React.useState(1)
   const [postPerPage, setPostPerPage] = React.useState(8)
