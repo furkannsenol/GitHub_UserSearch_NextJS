@@ -1,5 +1,5 @@
 
-<p align="center">
+<p text-align="center">
   <h1>Home Screen - Pagination(Total 80 data) </h1>
   <img src="https://user-images.githubusercontent.com/36533867/220442877-ea82deb7-edeb-49cb-b228-8f9ddb72dd9f.png"  >
   <h1>Search Screen</h1>
