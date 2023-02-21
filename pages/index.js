@@ -90,7 +90,7 @@ export default index
 
 export const getServerSideProps = async () => {
   try {
-    const res = await fetch("https://api.github.com/users?per_page=100")
+    const res = await fetch("https://api.github.com/users?per_page=80")
     const data = await res.json()
 
     if (data.message) { //when the request limit is opened
