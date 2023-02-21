@@ -10,7 +10,7 @@ const index = ({ data }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setUserName(event.target.value);
+    //setUserName(event.target.value);
     router.push(`user/${userName}`);
   }
 

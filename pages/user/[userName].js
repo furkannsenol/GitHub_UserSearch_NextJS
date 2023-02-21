@@ -28,7 +28,7 @@ const UserItem = ({ data, messageFound }) => {
         </Col>
         <Col xs='5' className='mt-5' style={{ marginLeft: "-30px" }}>
           <h4 className='mt-3'> {data?.name}</h4>
-          <span><a href={data?.html_url} className='text-secondary text-decoration-none'>  @{data?.login}</a></span>
+          <span><a href={data?.html_url} target='_blank' className='text-secondary text-decoration-none'>  @{data?.login}</a></span>
         </Col>
 
       </Row>
@@ -37,9 +37,9 @@ const UserItem = ({ data, messageFound }) => {
         <Col className='offset-md-5 px-3' xs={12}>
           <Icon.BriefcaseFill size={24} /> <span className='text-success'>{data?.company ? `${data?.company}` : `Not Available`}</span><br /><br />
           <Icon.GeoFill size={24} /><span className='text-success'> {data?.location ? `${data?.location}` : `Not Available`}</span><br /><br />
-          <Icon.Link size={24} /><a href={data?.blog} className='text-success text-decoration-none'> {data?.blog ? `${data?.blog}` : `Not Available`}</a><br /><br />
+          <Icon.Link size={24} /><a href={data?.blog} target='_blank' className='text-success text-decoration-none'> {data?.blog ? `${data?.blog}` : `Not Available`}</a><br /><br />
 
-          <Icon.Github size={24} /><a href={data?.html_url} className='text-success text-decoration-none'> {data?.html_url ? `${data?.html_url}` : `Not Available`}</a><br /><br />
+          <Icon.Github size={24} /><a href={data?.html_url} target='_blank' className='text-success text-decoration-none'> {data?.html_url ? `${data?.html_url}` : `Not Available`}</a><br /><br />
 
           <Icon.FolderFill size={24} /><span className='text-success'> Public Repos : {data?.public_repos ? `${data?.public_repos}` : `Not Available`}</span><br /><br />
           <Icon.ListColumnsReverse size={24} /><span className='text-success'> Public Gists : {data?.public_gists ? `${data?.public_gists}` : `Not Available`}</span><br /><br />

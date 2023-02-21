@@ -52,7 +52,7 @@ const index = ({ data, messageFound }) => {
           {currentPost?.map((user) => (
             <Col xs={3} key={user?.id}>
               <Card style={{ width: '15rem', marginBottom: 30}} >
-                <Image alt='user image'  width={238} height={238}  src={user?.avatar_url} onClick={e => router.push(`user/${user?.login}`)} style={{ cursor: 'pointer' }} />
+                <Image alt='user image'  width={238} height={238} priority  src={user?.avatar_url} onClick={e => router.push(`user/${user?.login}`)} style={{ cursor: 'pointer' }} />
                 <Card.Body className='text-center'>
                   <Card.Title  onClick={e => router.push(`user/${user?.login}`)} style={{ cursor: 'pointer' }}>{user?.login}</Card.Title>
                   <Card.Text>
@@ -70,7 +70,7 @@ const index = ({ data, messageFound }) => {
         <Row style={{marginTop:30}}>
           <Col>
             <nav >
-              <ul className={`pagination justify-content-center pagination-lg `} >
+              <ul className={`pagination justify-content-center pagination-lg `} style={{ cursor: 'pointer' }} >
                 {pageNumbers.map(number => (
                   <li key={number} className="page-item" >
                     <a onClick={() => { setCurrentPage(number); topOfPage(); }}
