@@ -14,7 +14,9 @@ Index.js -> Projenin ana sayfası olup, verilerin sayfalandırma mantığıyla l
 User Klasörü/ index.js (http://localhost:3000/user/) -> Kullancıdan username bilgisini text den alarak URL ye usurname bilgisini iletir.
 User Klasörü/[userName].js (http://localhost:3000/user/furkannsenol) -> URL deki parametreyi okuyup kullanıcıya ait bilgileri görüntülenmesini sağlar.
 
-
+Alınan Önlemler: 
+  - API den kaynaklı oluşan hataların önüne geçilerek projenin çökmemesi sağlandı
+  - Kayıtlı username olmadığı zaman 404 bilgisi gösterilmiştir
 
 <p align="center">
   <h1>Home Screen - Pagination(Total 80 data) </h1>
