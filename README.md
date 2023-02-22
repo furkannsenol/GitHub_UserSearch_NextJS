@@ -1,7 +1,7 @@
 Gereksinimler
 1) Node.js : Bu adresten indirebilirsiniz https://nodejs.org/en/download/
-2) React.js : Komut İstemci(cmd) ekranından **npm i react yazarak** framework ü kurabilirsiniz
-3) Next.js : Komut İstemci(cmd) ekranından **npm i next yazarak** framework ü kurabilirsiniz
+2) React.js : Komut İstemci(cmd) ekranından ***npm i react*** yazarak framework ü kurabilirsiniz
+3) Next.js : Komut İstemci(cmd) ekranından ***npm i next*** yazarak framework ü kurabilirsiniz
 
 
 <p align="center">
