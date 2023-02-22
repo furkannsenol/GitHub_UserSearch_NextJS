@@ -4,16 +4,17 @@
 3) Next.js : Komut İstemci(cmd) ekranından ***npm i next*** yazarak framework ü kurabilirsiniz
 4) Npm in Güncellenmesi: ***npm install npm --global***
 
-Proje Hakkında
+<h1>Proje Hakkında</h1>
 <p>Componentler -> Navbar ve Footer bileşenlerine ait tasarımlar bu klasör altında yer almaktadır.</p>
 <p>ayout -> </p>
 
-Index.js -> Projenin ana sayfası olup, verilerin sayfalandırma mantığıyla listeleme yaptığı bir sayfadır. Resim veya kullanıcı adına tıklandığında URL ye usurname bilgisini ileterek detay sayfasına (http://localhost:3000/user/userName) geçer.
+<p>Index.js -> Projenin ana sayfası olup, verilerin sayfalandırma mantığıyla listeleme yaptığı bir sayfadır. Resim veya kullanıcı adına tıklandığında URL ye usurname bilgisini ileterek detay sayfasına (http://localhost:3000/user/userName) geçer.</p>
 
 User Klasörü/ index.js (http://localhost:3000/user/) -> Kullancıdan username bilgisini text den alarak URL ye usurname bilgisini iletir.
+
 User Klasörü/[userName].js (http://localhost:3000/user/furkannsenol) -> URL deki parametreyi okuyup kullanıcıya ait bilgileri görüntülenmesini sağlar.
 
-Alınan Önlemler: 
+<h1>Alınan Önlemler</h1>
   - API den kaynaklı oluşan hataların önüne geçilerek projenin çökmemesi sağlandı
   - Kayıtlı username olmadığı zaman 404 bilgisi gösterilmiştir
 
