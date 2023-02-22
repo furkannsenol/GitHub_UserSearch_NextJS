@@ -5,9 +5,8 @@ Gereksinimler
 4) Npm in Güncellenmesi: ***npm install npm --global***
 
 Proje Hakkında
-Componentler -> Navbar ve Footer bileşenlerine ait tasarımlar bu klasör altında yer almaktadır.
-Layout -> 
-
+<p>Componentler -> Navbar ve Footer bileşenlerine ait tasarımlar bu klasör altında yer almaktadır.</p>
+<p>ayout -> </p>
 
 Index.js -> Projenin ana sayfası olup, verilerin sayfalandırma mantığıyla listeleme yaptığı bir sayfadır. Resim veya kullanıcı adına tıklandığında URL ye usurname bilgisini ileterek detay sayfasına (http://localhost:3000/user/userName) geçer.
 
