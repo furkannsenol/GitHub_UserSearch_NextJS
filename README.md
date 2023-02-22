@@ -2,16 +2,11 @@
 <h1>Gereksinimler</h1>
 <p>1) Node.js : Bu adresten indirebilirsiniz https://nodejs.org/en/download/</p>
 <p>2) React.js : Komut İstemci(cmd) ekranından   <b>npm i react</b>   yazarak framework ü kurabilirsiniz</p>
-<p>3) Next.js : Komut İstemci(cmd) ekranından npm i next yazarak framework ü kurabilirsiniz</p>
-<p>4) Npm in Güncellenmesi: npm install npm --global</p>
-<p>2) React.js : Komut İstemci(cmd) ekranından <b> npm i react </b> yazarak framework ü kurabilirsiniz</p>
 <p>3) Next.js : Komut İstemci(cmd) ekranından <b>npm i next </b>  yazarak framework ü kurabilirsiniz</p>
-<p>4) Npm in Güncellenmesi: <b>npm install npm --global </b> </p>
 <p>4) Npm in Güncellenmesi: <b>npm install npm --global </b> </p>
 
 <h1>Projenin çalıştırılması</h1>
-<p> Komut istemci de proje dosyasının bulunduğu dizine girilerek <b> npm run dev </b> yazarak projeyi ayağa kalkmış olur. Daha sonra tarayıcından http://localhost:3000 adresine gidebilirsiniz </p>
-<p> Komut istemci ile proje dosyasının bulunduğu dizine girilerek <b> npm run dev </b> yazarak projeyi ayağa kalkmış olur. Daha sonra tarayıcından http://localhost:3000 adresine gidebilirsiniz </p>
+<p> Komut istemci ile proje dosyasının bulunduğu dizine girilip <b> npm run dev </b> yazarak projeyi ayağa kaldırmış olursunuz. Daha sonra tarayıcından http://localhost:3000 adresine gidebilirsiniz </p>
 
 <h1>Proje Hakkında</h1>
 <p>Componentler -> Navbar ve Footer bileşenlerine ait tasarımlar bu klasör altında yer almaktadır.</p>
