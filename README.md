@@ -1,6 +1,6 @@
 Gereksinimler
 1) Node.js : Bu adresten indirebilirsiniz https://nodejs.org/en/download/
-2) React.js : Komut İstemci(cmd) ekranından ***npm i react*** yazarak framework ü kurabilirsiniz
+2) React.js : Komut İstemci(cmd) ekranından <font color="green">***npm i react***</font> yazarak framework ü kurabilirsiniz
 3) Next.js : Komut İstemci(cmd) ekranından ***npm i next*** yazarak framework ü kurabilirsiniz
 4) Npm in Güncellenmesi: ***npm install npm --global***
 
@@ -11,7 +11,7 @@ Layout ->
 
 Index.js -> Projenin ana sayfası olup, verilerin sayfalandırma mantığıyla listeleme yaptığı bir sayfadır. Resim veya kullanıcı adına tıklandığında URL ye usurname bilgisini ileterek detay sayfasına (http://localhost:3000/user/userName) geçer.
 
-User Klasörü/User Klasörü/ index.js (http://localhost:3000/user/) -> Kullancıdan username bilgisini text den alarak URL ye usurname bilgisini iletir.
+User Klasörü/ index.js (http://localhost:3000/user/) -> Kullancıdan username bilgisini text den alarak URL ye usurname bilgisini iletir.
 User Klasörü/[userName].js (http://localhost:3000/user/furkannsenol) -> URL deki parametreyi okuyup kullanıcıya ait bilgileri görüntülenmesini sağlar.
 
 
