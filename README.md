@@ -9,7 +9,7 @@
 <p> Komut istemci ile proje dosyasının bulunduğu dizine girilip <b> npm run dev </b> yazarak projeyi ayağa kaldırmış olursunuz. Daha sonra tarayıcından http://localhost:3000 adresine gidebilirsiniz </p>
 
 <h1>Proje Hakkında</h1>
-<p>Componentler -> Navbar ve Footer bileşenlerine ait tasarımlar bu klasör altında yer almaktadır.</p>
+<p>Componentler -> Navbar, Footer, Loader bileşenlerine ait tasarımlar bu klasör altında yer almaktadır.</p>
 <p>Layout -> </p>
 
 <p>Index.js -> Projenin ana sayfası olup, verilerin sayfalandırma mantığıyla listeleme yaptığı bir sayfadır. Resim veya kullanıcı adına tıklandığında URL ye usurname bilgisini ileterek detay sayfasına (http://localhost:3000/user/userName) geçer.</p>
@@ -21,6 +21,7 @@
 <h1>Alınan Önlemler</h1>
  <p> - API den kaynaklı oluşan hataların önüne geçilerek projenin çökmemesi sağlandı</p>
   <p>- Kayıtlı username olmadığı zaman 404 bilgisi gösterilmiştir</p>
+  <P>- Sayfa geçişlerinde kullanıcıya geri bildirim sağlaması adına loader page eklendi</p>
 
 <p align="center">
   <h1>Home Screen - Pagination(Total 80 data) </h1>
@@ -30,3 +31,7 @@
   <h1>User Detail Screen</h1>
   <img src="https://user-images.githubusercontent.com/36533867/220442879-6c297277-aae3-432a-a805-b3a05c46c919.png"  >
   <h1>API ERROR </h1>
+ <img src="https://user-images.githubusercontent.com/36533867/220593137-48e39fb2-99e8-4a83-9646-d16c769eb0ca.png">
+  <h1>Loading Page</h1>
+  <img src="https://user-images.githubusercontent.com/36533867/220592945-4372e2e1-99c3-4115-88a2-696b7421820c.png">
+
