@@ -1,8 +1,8 @@
 <h1>Gereksinimler</h1>
 <p>1) Node.js : Bu adresten indirebilirsiniz https://nodejs.org/en/download/</p>
-<p>2) React.js : Komut İstemci(cmd) ekranından ***npm i react*** yazarak framework ü kurabilirsiniz</p>
-<p>3) Next.js : Komut İstemci(cmd) ekranından ***npm i next*** yazarak framework ü kurabilirsiniz</p>
-<p>4) Npm in Güncellenmesi: ***npm install npm --global***</p>
+<p>2) React.js : Komut İstemci(cmd) ekranından npm i react yazarak framework ü kurabilirsiniz</p>
+<p>3) Next.js : Komut İstemci(cmd) ekranından npm i next yazarak framework ü kurabilirsiniz</p>
+<p>4) Npm in Güncellenmesi: npm install npm --global</p>
 
 <h1>Proje Hakkında</h1>
 <p>Componentler -> Navbar ve Footer bileşenlerine ait tasarımlar bu klasör altında yer almaktadır.</p>
