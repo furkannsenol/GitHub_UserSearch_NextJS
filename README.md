@@ -1,4 +1,12 @@
-@ -5,27 +5,27 @@
+
+<h1>Gereksinimler</h1>
+<p>1) Node.js : Bu adresten indirebilirsiniz https://nodejs.org/en/download/</p>
+<p>2) React.js : Komut İstemci(cmd) ekranından   <b>npm i react</b>   yazarak framework ü kurabilirsiniz</p>
+<p>3) Next.js : Komut İstemci(cmd) ekranından npm i next yazarak framework ü kurabilirsiniz</p>
+<p>4) Npm in Güncellenmesi: npm install npm --global</p>
+<p>2) React.js : Komut İstemci(cmd) ekranından <b> npm i react </b> yazarak framework ü kurabilirsiniz</p>
+<p>3) Next.js : Komut İstemci(cmd) ekranından <b>npm i next </b>  yazarak framework ü kurabilirsiniz</p>
+<p>4) Npm in Güncellenmesi: <b>npm install npm --global </b> </p>
 <p>4) Npm in Güncellenmesi: <b>npm install npm --global </b> </p>
 
 <h1>Projenin çalıştırılması</h1>
