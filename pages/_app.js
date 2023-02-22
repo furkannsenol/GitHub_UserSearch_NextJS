@@ -5,30 +5,28 @@ import { SSRProvider } from 'react-bootstrap';
 import Router, { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Loader from '@/components/Loader';
+import NProgress from 'nprogress';
 
 export default function App({ Component, pageProps }) {
-  /*const router = useRouter();
   const [loading, setLoading] = useState(false)
 
-  useEffect(() => {
+  Router.events.on("routeChangeStart",(url) => {
+    setLoading(true);
+  });
 
-    const handleStart = (url) => (url !== router.asPath) && setLoading(true);
-    const handleComplete = (url) => (url === router.asPath) && setTimeout(() => { setLoading(false) }, 500);
+  Router.events.on("routeChangeComplete",(url) =>{
+    setLoading(false);
+  });
 
-    router.events.on('routeChangeStart', handleStart)
-    router.events.on('routeChangeComplete', handleComplete)
-
-    return () => {
-      router.events.off('routeChangeStart', handleStart)
-      router.events.off('routeChangeComplete', handleComplete)
-    }
-  })*/
-
+  Router.events.on("routeChangeError",(url) =>{
+    setLoading(false);
+  });
   return (
-      <SSRProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </SSRProvider>
+    <SSRProvider>
+      <Layout>
+        {loading && <Loader/>}
+        <Component {...pageProps} />
+      </Layout>
+    </SSRProvider>
   )
 }
